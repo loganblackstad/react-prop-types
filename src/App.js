@@ -20,7 +20,7 @@ function App() {
         <Card {...cardFull} />
       </Box>
       <FavNum name="Joe" num={13} />
-      <ButtonOne />
+      <ButtonOne style={{ color: 'red' }} />
     </div>
   );
 }
