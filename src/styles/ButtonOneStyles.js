@@ -6,7 +6,7 @@ const ButtonOneStyles = {
     padding: '10px'
   },
 
-  disable: {
+  disabled: {
     backgroundColor: '#9c9c9c',
     color: '#c7c6c6',
   }

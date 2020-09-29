@@ -1,9 +1,9 @@
 import React from "react";
 
 import Box from "./components/Box";
-import ButtonOne from "./components/ButtonOne";
 import Card from "./components/Card";
 import { FavNum } from "./components/FavNum";
+import ButtonOne from "./components/ButtonOne";
 
 // plain css defined as css objects: cardBasic, cardDanger, cardFull
 import { cardBasic, cardDanger, cardFull } from "./settings";
