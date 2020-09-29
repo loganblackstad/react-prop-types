@@ -23,6 +23,7 @@ function App() {
       </Box>
       <FavNum name="Joe" num={13} />
       <ButtonOne />
+      {/* <CountButton /> */}
     </div>
   );
 }
