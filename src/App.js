@@ -44,10 +44,14 @@ function App() {
       </Box>
       <FavNum name="Joe" num={13} />
       <ButtonOne />
+<<<<<<< HEAD
+      {/* <CountButton /> */}
+=======
       <br />
       <p style={{ textAlign: 'center' }}>{`add css styling from ./styles/mystyle.module.css`}</p>
       <StyledClassCmp />
       <MySassStyleCmp />
+>>>>>>> master
     </div>
   );
 }
