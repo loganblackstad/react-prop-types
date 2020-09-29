@@ -1,6 +1,7 @@
 import React from "react";
 
 import Box from "./components/Box";
+import ButtonOne from "./components/ButtonOne";
 import Card from "./components/Card";
 import { FavNum } from "./components/FavNum";
 
@@ -19,6 +20,7 @@ function App() {
         <Card {...cardFull} />
       </Box>
       <FavNum name="Joe" num={13} />
+      <ButtonOne />
     </div>
   );
 }
