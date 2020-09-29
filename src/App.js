@@ -9,6 +9,15 @@ import ButtonOne from "./components/ButtonOne";
 import { cardBasic, cardDanger, cardFull } from "./settings";
 import "./style.css";
 import ButtonOneStyles from "./styles/ButtonOneStyles";
+import mystyle from './styles/mystyle.module.css';
+
+
+class StyledClassCmp extends React.Component {
+  render() {
+    return <h2 className={mystyle.bigblue}>{`The component must import css from <name>.module.css`}</h2>;
+  }
+}
+
 
 function App() {
 
@@ -23,6 +32,7 @@ function App() {
       </Box>
       <FavNum name="Joe" num={13} />
       <ButtonOne />
+      <StyledClassCmp />
     </div>
   );
 }
