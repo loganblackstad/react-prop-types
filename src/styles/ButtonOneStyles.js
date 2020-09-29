@@ -3,7 +3,7 @@ const ButtonOneStyles = {
   default: {
     backgroundColor: '#737373',
     color: '#eae8e8',
-    padding: '10px'
+    padding: '10px',
   },
 
   disabled: {

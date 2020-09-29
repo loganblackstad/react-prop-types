@@ -8,8 +8,10 @@ import ButtonOne from "./components/ButtonOne";
 // plain css defined as css objects: cardBasic, cardDanger, cardFull
 import { cardBasic, cardDanger, cardFull } from "./settings";
 import "./style.css";
+import ButtonOneStyles from "./styles/ButtonOneStyles";
 
 function App() {
+
   return (
     <div>
       <Box className="main">
@@ -20,7 +22,7 @@ function App() {
         <Card {...cardFull} />
       </Box>
       <FavNum name="Joe" num={13} />
-      <ButtonOne style={{ color: 'red' }} />
+      <ButtonOne />
     </div>
   );
 }
