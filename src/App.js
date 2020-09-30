@@ -4,6 +4,7 @@ import Box from "./components/Box";
 import Card from "./components/Card";
 import { FavNum } from "./components/FavNum";
 import ButtonOne from "./components/ButtonOne";
+import CountClicks from "./components/CountClicks";
 
 // plain css defined as css objects: cardBasic, cardDanger, cardFull
 import { cardBasic, cardDanger, cardFull } from "./settings";
@@ -44,14 +45,17 @@ function App() {
       </Box>
       <FavNum name="Joe" num={13} />
       <ButtonOne />
-<<<<<<< HEAD
-      {/* <CountButton /> */}
-=======
       <br />
       <p style={{ textAlign: 'center' }}>{`add css styling from ./styles/mystyle.module.css`}</p>
       <StyledClassCmp />
       <MySassStyleCmp />
->>>>>>> master
+
+      {/* <CountButton /> */}
+      <hr />
+      <br />
+      <CountClicks />
+      <br />
+
     </div>
   );
 }
