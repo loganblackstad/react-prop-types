@@ -6,6 +6,10 @@ import { FavNum } from "./components/FavNum";
 import ButtonOne from "./components/ButtonOne";
 import CountClicks from "./components/CountClicks";
 import CountHovers from "./components/CountHovers";
+import CountClicksWithHOCCounter from "./components/CountClicksWithHOCCounter";
+import CountHoversWithHOCCounter from "./components/CountHoversWithHOCCounter";
+
+
 
 // plain css defined as css objects: cardBasic, cardDanger, cardFull
 import { cardBasic, cardDanger, cardFull } from "./settings";
@@ -56,6 +60,12 @@ function App() {
       <br />
       <CountClicks />
       <CountHovers />
+      <br />
+      <hr />
+      <br />
+      <p style={{ textAlign: 'center' }}>{`HOC practice with UpdatedComponent (aka 'withHOC'), NewComponent, and OriginalComponent`}</p>
+      {/* <CountClicksWithHOCCounter /> */}
+      <CountHoversWithHOCCounter />
       <br />
 
     </div>
