@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import UpdatedComponent from './withHOC.jsx'
 
 export class CountHovers extends Component {
   constructor(props) {
@@ -25,11 +26,11 @@ export class CountHovers extends Component {
     const { count } = this.state
     return (
       <div>
-        <button onMouseOver={this.incrementCount} style={{ width: '150px', marginBottom: '5px' }}>Hovered {count} times</button>
-        <button onClick={this.resetCount} style={{ width: '150px', marginBottom: '5px' }}>Reset Hover Counter</button>
+        <button onMouseOver={this.incrementCount} style={{ width: '170px', marginBottom: '5px' }}>{this.props.name} hovered {count} times</button>
+        <button onClick={this.resetCount} style={{ width: '170px', marginBottom: '5px' }}>Reset Hover Counter</button>
       </div>
     )
   }
 }
 
-export default CountHovers
+export default UpdatedComponent(CountHovers)
