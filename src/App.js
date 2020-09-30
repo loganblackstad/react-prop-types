@@ -5,6 +5,7 @@ import Card from "./components/Card";
 import { FavNum } from "./components/FavNum";
 import ButtonOne from "./components/ButtonOne";
 import CountClicks from "./components/CountClicks";
+import CountHovers from "./components/CountHovers";
 
 // plain css defined as css objects: cardBasic, cardDanger, cardFull
 import { cardBasic, cardDanger, cardFull } from "./settings";
@@ -54,6 +55,7 @@ function App() {
       <hr />
       <br />
       <CountClicks />
+      <CountHovers />
       <br />
 
     </div>

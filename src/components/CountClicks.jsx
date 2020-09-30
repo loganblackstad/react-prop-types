@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import UpdatedComponent from './withHOC.jsx'
 
 export class CountClicks extends Component {
   constructor(props) {
@@ -25,11 +26,11 @@ export class CountClicks extends Component {
     const { count } = this.state
     return (
       <div>
-        <button onClick={this.incrementCount} style={{ width: '150px', marginBottom: '5px' }}>Clicked {count} times</button>
-        <button onClick={this.resetCount} style={{ width: '150px' }}>Reset Click Counter</button>
+        <button onClick={this.incrementCount} style={{ width: '150px', marginBottom: '5px' }}>{this.props.name} clicked {count} times</button>
+        <button onClick={this.resetCount} style={{ width: '150px', marginBottom: '10px' }}>Reset Click Counter</button>
       </div>
     )
   }
 }
 
-export default CountClicks
+export default UpdatedComponent(CountClicks)
